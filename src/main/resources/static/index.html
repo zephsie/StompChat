@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <title>Demo</title>
+</head>
+<body>
+
+<div id="username-page">
+    <div>
+        <h1>Type your username</h1>
+        <form id="usernameForm">
+            <div>
+                <label for="name"></label><input type="text" id="name" placeholder="Username"/>
+            </div>
+
+            <div>
+                <button type="submit">Start</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="chat-page">
+    <div>
+        <ul id="messageArea"></ul>
+
+        <form id="messageForm">
+            <div>
+                <div>
+                    <label for="message"></label><input type="text" id="message" placeholder="Type a message..."/>
+                    <button type="submit" class="primary">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="/js/main.js"></script>
+
+</body>
+</html>
